@@ -1,0 +1,13 @@
+.logo {
+  font-family: var(--second-family);
+  text-transform: uppercase;
+  color: var(--dog-landing-3-s1);
+  &__text-big {
+    font-weight: 400;
+    font-size: 32px;
+  }
+  &__text-little {
+    font-weight: 300;
+    font-size: 24px;
+  }
+}
