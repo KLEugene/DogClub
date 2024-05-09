@@ -1,0 +1,10 @@
+.title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--dog-landing-3-c4);
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+  }
+}

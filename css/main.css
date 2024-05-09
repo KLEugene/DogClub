@@ -86,6 +86,34 @@ ul {
   font-size: 24px;
 }
 
+.title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--dog-landing-3-c4);
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 56px;
+  }
+}
+
+.usually-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: 0.05em;
+  color: var(--dog-landing-3-c4);
+}
+@media screen and (min-width: 768px) {
+  .usually-text {
+    font-size: 22px;
+    line-height: 155%;
+  }
+}
+
 .button {
   border-radius: 4px;
   border: none;
@@ -150,4 +178,8 @@ ul {
     display: flex;
     gap: 48px;
   }
+}
+
+.hero__title {
+  text-align: left;
 }/*# sourceMappingURL=main.css.map */
