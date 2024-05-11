@@ -8,19 +8,28 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Rowdies;
+  src: url("../fonts/Rowdies-Regular.ttf");
+}
 body {
   margin: 0;
   color: var(--dog-landing-3-c4);
   background: var(--dog-landing-3-background);
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 22px;
-  line-height: 155%;
+  font-size: 18px;
+  line-height: 133%;
 }
 @media screen and (min-width: 768px) {
   body {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 400;
+    line-height: 155%;
   }
 }
 
@@ -68,8 +77,8 @@ ul {
   --dog-landing-3-s8: #f9f9ff;
   --dog-landing-3-c9: #d9a6ff;
   --dog-landing-3-c10: #ff6e9f;
-  --font-family: "Roboto", sans-serif;
-  --second-family: "Rowdies", sans-serif;
+  --font-family: Roboto;
+  --second-family: Rowdies;
 }
 
 .logo {
@@ -92,6 +101,7 @@ ul {
   font-size: 32px;
   color: var(--dog-landing-3-c4);
   text-align: center;
+  line-height: normal;
 }
 @media screen and (min-width: 768px) {
   .title {
@@ -181,5 +191,15 @@ ul {
 }
 
 .hero__title {
+  text-align: center;
+  font-size: 32px;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 72px;
+  }
+}
+
+.preview__title {
   text-align: left;
 }/*# sourceMappingURL=main.css.map */

@@ -8,18 +8,27 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: Rowdies;
+  src: url('../fonts/Rowdies-Regular.ttf');
+}
 body {
   margin: 0;
   color: var(--dog-landing-3-c4);
   background: var(--dog-landing-3-background);
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 22px;
-  line-height: 155%;
+  font-size: 18px;
+  line-height: 133%;
 
   @media screen and (min-width: 768px) {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 400;
+    line-height: 155%;
   }
 }
 
