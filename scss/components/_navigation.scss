@@ -1,4 +1,6 @@
-.navigation{
-    display:flex;
-    
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 1;
 }
