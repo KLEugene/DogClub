@@ -1,51 +1,60 @@
-.header{
+.header {
+  display: flex;
+  padding: 16px 20px;
+  margin-bottom: 32px;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    padding: 32px 108px;
+    margin-bottom: 72px;
+  }
+
+  &__menu {
+    font-size: 16px;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      font-size: 18px;
+      gap: 48px;
+    }
+  }
+
+  &__link{
+    color: var(--dog-landing-3-c4);
+  }
+  &__link:hover,
+  &__link:focus{color: var(--dog-landing-3-s1);}
+
+  &__button {
     display: flex;
-    padding: 16px 20px;
-    margin-bottom: 32px;
-    align-items: center;
-    justify-content: space-between;
-   
-    @media screen and (min-width:768px) {
-      padding: 32px 108px;
-      margin-bottom: 72px;
-    }
-
-    &__menu{
-        font-size: 16px;
-        display: none;
-        
-        @media screen and (min-width:768px) {
-            display: flex;
-            font-size: 18px;
-            gap: 48px;
-        }
-    }
-
-    &__menu > li > a{
-        color: var(--dog-landing-3-c4);
-    }
-    
+  }
 }
 
-.basket{
-   border: none;
-    background: inherit;
-    cursor: pointer; 
+.basket {
+  border: none;
+  background: inherit;
+  cursor: pointer;
+  margin-right: 16px;
+  @media screen and (min-width: 768px) {
+    margin-right: 24px;
+  }
 }
 
-.basket-icon{
-    width: 24px;
-    height: 24px;
-    @media screen and (min-width:768px) {
-        width: 40px;
-        height: 40px;
-    }
+.basket-icon {
+  width: 24px;
+  height: 24px;
+  @media screen and (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
 }
-.burger-btn{
-    border: none;
-    background: inherit;
-    cursor: pointer;
-    @media screen and (min-width:768px) {
-        display: none;
-    }
+.burger-btn {
+  border: none;
+  background: inherit;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }

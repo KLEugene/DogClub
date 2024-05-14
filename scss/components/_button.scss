@@ -1,6 +1,7 @@
 .button {
   border-radius: 4px;
   border:none;
+  cursor: pointer;
   background: var(--dog-landing-3-s1);
   font-family: var(--font-family);
   font-weight: 500;
@@ -11,10 +12,13 @@
     font-weight: 700;
     border-radius: 8px;
   }
+  &:hover,
+  &:focus{
+    box-shadow: inset 0px 10px 11px -4px rgba(0,0,0,0.6);
+  }
 }
 .contact-btn {
   display: none;
- font-weight: 500;
 padding: 8px 24px;
 width: 126px;
   @media screen and (min-width: 768px) {

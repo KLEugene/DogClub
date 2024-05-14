@@ -5,6 +5,15 @@
     font-size: 32px;
     @media screen and (min-width:768px) {
       font-size: 72px;
+      text-align: left;
+      max-width: 635px;
+      margin-bottom: 40px;
+    }
+  }
+  &__text{
+    @media screen and (min-width:768px) {
+      max-width: 498px;
+      margin-bottom: 24px;;
     }
   }
 }

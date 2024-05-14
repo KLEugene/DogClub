@@ -131,6 +131,15 @@ ul {
   }
 }
 
+.container {
+  padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 108px;
+  }
+}
+
 .usually-text {
   font-family: var(--font-family);
   font-weight: 400;
@@ -149,6 +158,7 @@ ul {
 .button {
   border-radius: 4px;
   border: none;
+  cursor: pointer;
   background: var(--dog-landing-3-s1);
   font-family: var(--font-family);
   font-weight: 500;
@@ -162,10 +172,12 @@ ul {
     border-radius: 8px;
   }
 }
+.button:hover, .button:focus {
+  box-shadow: inset 0px 10px 11px -4px rgba(0, 0, 0, 0.6);
+}
 
 .contact-btn {
   display: none;
-  font-weight: 500;
   padding: 8px 24px;
   width: 126px;
 }
@@ -182,6 +194,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   flex-shrink: 1;
+  flex-grow: 0.5;
 }
 
 .social-conteiner {
@@ -224,14 +237,26 @@ ul {
     gap: 48px;
   }
 }
-.header__menu > li > a {
+.header__link {
   color: var(--dog-landing-3-c4);
+}
+.header__link:hover, .header__link:focus {
+  color: var(--dog-landing-3-s1);
+}
+.header__button {
+  display: flex;
 }
 
 .basket {
   border: none;
   background: inherit;
   cursor: pointer;
+  margin-right: 16px;
+}
+@media screen and (min-width: 768px) {
+  .basket {
+    margin-right: 24px;
+  }
 }
 
 .basket-icon {
@@ -263,6 +288,15 @@ ul {
 @media screen and (min-width: 768px) {
   .hero__title {
     font-size: 72px;
+    text-align: left;
+    max-width: 635px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__text {
+    max-width: 498px;
+    margin-bottom: 24px;
   }
 }
 
