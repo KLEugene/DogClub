@@ -117,6 +117,20 @@ ul {
   }
 }
 
+.services-card {
+  width: 240px;
+  height: 240px;
+  border: 1px solid var(--dog-landing-3-s8);
+  border-radius: 16px;
+  box-shadow: 0 4px 4px 0 rgba(24, 24, 23, 0.05);
+  background: linear-gradient(180deg, #fff 0%, #fffbf4 100%);
+}
+
+.services-cards {
+  display: flex;
+  gap: 24px;
+}
+
 .title {
   font-family: var(--second-family);
   font-weight: 400;
@@ -164,12 +178,14 @@ ul {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
+  padding: 8px 24px;
   color: var(--dog-landing-3-background);
 }
 @media screen and (min-width: 768px) {
   .button {
     font-weight: 700;
     border-radius: 8px;
+    padding: 16px 32px;
   }
 }
 .button:hover, .button:focus {
@@ -178,14 +194,30 @@ ul {
 
 .contact-btn {
   display: none;
-  padding: 8px 24px;
   width: 126px;
 }
 @media screen and (min-width: 768px) {
   .contact-btn {
     display: block;
-    padding: 16px 32px;
     width: 152px;
+  }
+}
+
+.explore-btn {
+  width: 143px;
+}
+@media screen and (min-width: 768px) {
+  .explore-btn {
+    width: 171px;
+  }
+}
+
+.buy-btn {
+  width: 75px;
+}
+@media screen and (min-width: 768px) {
+  .buy-btn {
+    width: 95px;
   }
 }
 
