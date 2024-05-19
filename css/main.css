@@ -118,12 +118,20 @@ ul {
 }
 
 .services-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
   width: 240px;
   height: 240px;
   border: 1px solid var(--dog-landing-3-s8);
   border-radius: 16px;
   box-shadow: 0 4px 4px 0 rgba(24, 24, 23, 0.05);
   background: linear-gradient(180deg, #fff 0%, #fffbf4 100%);
+}
+.services-card__img {
+  margin-bottom: 24px;
 }
 
 .services-cards {
