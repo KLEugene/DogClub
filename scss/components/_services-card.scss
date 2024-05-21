@@ -13,6 +13,11 @@
   &__img{
     margin-bottom: 24px;
   }
+  &__link{
+    color: var(--dog-landing-3-s1);   
+   
+  }
+  &__link.more{padding-top:216px; font-size: 18px;}
 }
 .services-cards{
   display: flex;
