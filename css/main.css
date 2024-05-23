@@ -349,4 +349,25 @@ ul {
 
 .preview__title {
   text-align: left;
+}
+
+.happy-customers__cards {
+  display: flex;
+}
+.happy-customers__card {
+  position: relative;
+  width: 320px;
+  height: 416px;
+  border-radius: 16px;
+}
+@media screen and (min-width: 768px) {
+  .happy-customers__card {
+    width: 344px;
+    height: 456px;
+    border-radius: 24px;
+  }
+}
+.content-container {
+  position: absolute;
+  background-color: var(--dog-landing-3-c6);
 }/*# sourceMappingURL=main.css.map */
