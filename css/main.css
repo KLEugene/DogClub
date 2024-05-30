@@ -40,7 +40,8 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -144,7 +145,6 @@ ul {
 .services-cards {
   width: 100%;
   display: flex;
-  gap: 24px;
   animation: 15s infinite slider;
 }
 @media screen and (min-width: 768px) {
@@ -155,33 +155,47 @@ ul {
 }
 
 .slider-container {
-  width: 70%;
+  overflow: hidden;
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .slider-container {
+    width: 100%;
+  }
 }
 
 @keyframes slider {
   0% {
     transform: translateX(0);
   }
-  25% {
+  20% {
     transform: translateX(0);
   }
-  30% {
+  22% {
     transform: translateX(-100%);
   }
-  50% {
+  40% {
     transform: translateX(-100%);
   }
-  55% {
+  42% {
     transform: translateX(-200%);
   }
-  75% {
+  60% {
     transform: translateX(-200%);
+  }
+  62% {
+    transform: translateX(-300%);
   }
   80% {
     transform: translateX(-300%);
   }
+  82% {
+    transform: translateX(-400%);
+  }
   100% {
-    transform: translateX(-300%);
+    transform: translateX(-400%);
   }
 }
 .title {
@@ -394,8 +408,10 @@ ul {
 }
 .happy-customers__card {
   position: relative;
+  display: block;
   width: 320px;
   height: 416px;
+  overflow: hidden;
   border-radius: 16px;
 }
 @media screen and (min-width: 768px) {
@@ -405,7 +421,29 @@ ul {
     border-radius: 24px;
   }
 }
+.happy-customers__image {
+  width: 100%;
+}
+.happy-customers__card-title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: var(--dog-landing-3-background);
+}
+.happy-customers__text {
+  font-size: 16px;
+  color: var(--dog-landing-3-c5);
+  margin-bottom: 24px;
+}
+
 .content-container {
   position: absolute;
+  width: 100%;
+  padding: 16px 0;
+  line-height: normal;
+  left: 0;
+  bottom: 0;
+  height: 130px;
   background-color: var(--dog-landing-3-c6);
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

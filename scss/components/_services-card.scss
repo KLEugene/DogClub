@@ -22,7 +22,6 @@
 .services-cards{
   width: 100%;
   display: flex;
-  gap:24px;
   animation: 15s infinite slider;
   @media screen and (min-width:768px) {
     animation: none;
@@ -30,32 +29,44 @@
   }
 }
 .slider-container{
-  width: 70%;
+  overflow: hidden;
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width:768px) {
+    width: 100%;
+  }
  
 }
  @keyframes slider {
   0% {
     transform: translateX(0);
   }
-  25%{
+  20%{
     transform: translateX(0);
   }
-  30%{
+  22%{
     transform: translateX(-100%);
   }
-  50%{
+  40%{
     transform: translateX(-100%);
   }
-  55%{
+  42%{
     transform: translateX(-200%);
   }
-  75%{
+  60%{
     transform: translateX(-200%);
+  }
+  62%{
+    transform: translateX(-300%);
   }
   80%{
     transform: translateX(-300%);
   }
+  82%{
+    transform: translateX(-400%);
+  }
   100%{
-    transform: translateX(-300%);
+    transform: translateX(-400%);
   }
 }
