@@ -205,10 +205,12 @@ ul {
   color: var(--dog-landing-3-c4);
   text-align: center;
   line-height: normal;
+  margin-bottom: 24px;
 }
 @media screen and (min-width: 768px) {
   .title {
     font-size: 56px;
+    margin-bottom: 48px;
   }
 }
 
@@ -228,11 +230,21 @@ ul {
   line-height: 133%;
   letter-spacing: 0.05em;
   color: var(--dog-landing-3-c4);
+  margin-bottom: 24px;
 }
 @media screen and (min-width: 768px) {
   .usually-text {
     font-size: 22px;
     line-height: 155%;
+  }
+}
+
+.section {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    margin-bottom: 96px;
   }
 }
 

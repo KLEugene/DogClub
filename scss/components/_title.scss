@@ -5,7 +5,9 @@
   color: var(--dog-landing-3-c4);
   text-align: center;
   line-height: normal;
+  margin-bottom: 24px;
   @media screen and (min-width: 768px) {
     font-size: 56px;
+    margin-bottom: 48px;
   }
 }
