@@ -1,5 +1,4 @@
 .happy-customers {
-  
   &__cards {
     display: flex;
   }
@@ -18,6 +17,7 @@
   }
   &__image {
     width: 100%;
+    height: 100%;
   }
   &__card-title {
     font-weight: 600;
@@ -41,4 +41,21 @@
   height: 130px;
   background-color: var(--dog-landing-3-c6);
   text-align: center;
+}
+.rating {
+  display: flex;
+  justify-content: space-between;
+  width: 258px;
+  margin-left: auto;
+  margin-right: auto;
+  &__text {
+    font-size: 16px;
+    color: #fa0;
+  }
+}
+.accent-bone{
+fill:#FFAA00;
+}
+.empty-bone{
+  fill:#F1F3FF;
 }
