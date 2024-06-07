@@ -36,7 +36,7 @@
     border-radius: 24px;
   }
 }
-#desktop:checked ~ #slider {
+#slider {
   /* размер всего слайдера */
   max-width: 320px;
   @media screen and (min-width: 768px) {
@@ -154,6 +154,7 @@ a {
 #switch5:checked ~ #active label:nth-child(5) {
   background: #18a3dd;
   border-color: #18a3dd !important;
+  width: 30px;
 }
 #slides .happy-customers__cards {
   /* анимация пролистывания изображений */
