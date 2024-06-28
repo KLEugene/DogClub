@@ -1,19 +1,40 @@
 .hero {
-  
-  &__title{
+  display: flex;
+  &__title {
     text-align: center;
     font-size: 32px;
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
       font-size: 72px;
       text-align: left;
       max-width: 635px;
       margin-bottom: 40px;
     }
   }
-  &__text{
-    @media screen and (min-width:768px) {
+  &__text {
+    @media screen and (min-width: 768px) {
       max-width: 498px;
-      margin-bottom: 24px;;
+      margin-bottom: 24px;
     }
+  }
+  &__mask {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      width: 506px;
+      height: 516px;
+      background-image: url("../images/hero-paws.svg"),
+        url("../images/hero-orange.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  &__image {
+    width: 423px;
+    height: 461px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }

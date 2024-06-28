@@ -1,6 +1,10 @@
 .preview {
- 
+    display: flex;
     &__title{
         text-align: left;
+    }
+    &__image{
+        width: 540px;
+        height: 500px;
     }
 }

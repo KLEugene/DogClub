@@ -612,6 +612,9 @@ a {
   }
 }
 
+.hero {
+  display: flex;
+}
 .hero__title {
   text-align: center;
   font-size: 32px;
@@ -630,9 +633,38 @@ a {
     margin-bottom: 24px;
   }
 }
+.hero__mask {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero__mask {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 506px;
+    height: 516px;
+    background-image: url("../images/hero-paws.svg"), url("../images/hero-orange.svg");
+    background-repeat: no-repeat;
+  }
+}
+.hero__image {
+  width: 423px;
+  height: 461px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.preview {
+  display: flex;
+}
 .preview__title {
   text-align: left;
+}
+.preview__image {
+  width: 540px;
+  height: 500px;
 }
 
 .happy-customers {
