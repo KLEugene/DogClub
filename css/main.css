@@ -215,6 +215,46 @@ ul {
   }
 }
 
+.contact-form {
+  /* background-color: var(--beauty-landing-2-c1); */
+  border-radius: 32px;
+  padding: 42px 24px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+@media screen and (min-width: 768px) {
+  .contact-form {
+    padding: 48px 56px;
+    width: 422px;
+  }
+}
+.contact-form__title {
+  margin-bottom: 24px;
+}
+.contact-form__input {
+  margin-bottom: 16px;
+  background-color: inherit;
+  color: var(--dog-landing-3-s1);
+  padding: 16px 24px;
+  border: 1.5px solid var(--dog-landing-3-s1);
+  border-radius: 24px;
+}
+.contact-form__input:focus {
+  outline: none;
+}
+.contact-form__button {
+  margin-bottom: 8px;
+  background: var(--dog-landing-3-s1);
+  color: var(--dog-landing-3-c3);
+}
+.contact-form__agree {
+  line-height: 150%;
+  text-align: center;
+  color: var(--dog-landing-3-c6);
+  font-size: 12px;
+}
+
 #slider {
   /* положение слайдера */
   position: relative;
@@ -643,7 +683,8 @@ a {
     overflow: hidden;
     width: 506px;
     height: 516px;
-    background-image: url("../images/hero-paws.svg"), url("../images/hero-orange.svg");
+    background-image: url("../images/hero-dog1.png"), url("../images/hero-dog2.png"), url("../images/hero-dog3.png"), url("../images/hero-paws.svg"), url("../images/hero-orange.svg");
+    background-position: 0 0, 10px 20px, 40px 70px;
     background-repeat: no-repeat;
   }
 }

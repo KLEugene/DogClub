@@ -24,8 +24,10 @@
       overflow: hidden;
       width: 506px;
       height: 516px;
-      background-image: url("../images/hero-paws.svg"),
-        url("../images/hero-orange.svg");
+      background-image: url("../images/hero-dog1.png"),
+        url("../images/hero-dog2.png"), url("../images/hero-dog3.png"),
+        url("../images/hero-paws.svg"), url("../images/hero-orange.svg");
+        background-position: 0 0, 10px 20px, 40px 70px;
       background-repeat: no-repeat;
     }
   }
