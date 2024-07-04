@@ -5,12 +5,12 @@
     position: absolute;
     content: "";
     top: -60px;
-    left: 0;
+    left: 20px;
     background-image: url("../images/hero-dog1.png"),
       url("../images/hero-dog2.png"), url("../images/hero-dog3.png"),
-      url("../images/hero-curve.svg");
+      url("../images/hero-curve.svg"), url("../images/violet-paw.svg"), url("../images/orange-paw.svg"), url("../images/pink-paw.svg");
 
-    background-position: 1152px 200px, 500px 280px, 710px 60px, 410px 0px;
+    background-position: 1132px 200px, 480px 280px, 690px 60px, 390px 0px, 590px 140px, 510px 400px, 1160px 310px;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
