@@ -10,11 +10,11 @@ html {
 
 @font-face {
   font-family: Roboto;
-  src: url('../fonts/Roboto-Regular.ttf');
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: Rowdies;
-  src: url('../fonts/Rowdies-Regular.ttf');
+  src: url("../fonts/Rowdies-Regular.ttf");
 }
 body {
   margin: 0;
@@ -45,7 +45,7 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
+  width: inherit;
   height: auto;
   object-fit: cover;
 }
