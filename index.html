@@ -418,10 +418,23 @@
             <button type="button" class="button contact-form__button">
               Contact us
             </button>
-            <p class="contact-form__agree">
-              I agree to the
-              <a href="#" class="contact-form__agree">privacy policy</a>
-            </p>
+            <label for="accept" class="accept">
+              <input
+                type="checkbox"
+                class="checkbox"
+                name="accept"
+                id="accept"
+                required
+              />
+              <svg class="accept-icon accept-icon-ch" height="16" width="16">
+                <use href="./images/icons.svg#icon-checked"></use>
+              </svg>
+              <svg class="accept-icon accept-icon-unch" height="16" width="16">
+                <use href="./images/icons.svg#icon-unchecked"></use>
+              </svg>
+              I agree to the &nbsp;
+              <a href="#">privacy policу</a>
+            </label>
           </form>
         </div>
       </section>
