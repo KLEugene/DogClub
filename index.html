@@ -451,6 +451,73 @@
         </section>
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <a href="/" class="logo">
+            <svg class="logo__icon">
+              <use href="./images/icons.svg#icon-paw"></use>
+            </svg>
+            <span class="logo__text-big">Dog</span
+            ><span class="logo__text-little">Club</span>
+          </a>
+          <svg href=""><use></use></svg>
+          <svg href=""><use></use></svg>
+        </div>
+
+        <ul class="footer__menu">
+          <li><a href="#" class="footer__link">Less talk</a></li>
+          <li><a href="#" class="footer__link">Services category</a></li>
+          <li><a href="#" class="footer__link">Happy customer</a></li>
+          <li><a href="#" class="footer__link">Contact</a></li>
+        </ul>
+
+        <div class="footer">
+          <form class="contact-form">
+            <label for="email"></label>
+            <div class="contact-form__field">
+              <input
+                class="contact-form__input"
+                id="email"
+                name="email"
+                placeholder="Your email"
+              />
+              <svg class="contact-form__icon" width="32" height="32">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+            <label for="cmc"></label>
+            <div class="contact-form__field">
+              <input
+                class="contact-form__input"
+                id="cmc"
+                name="cmc"
+                placeholder="Your CMC"
+              />
+            </div>
+            <button type="button" class="button contact-form__button">
+              Contact us
+            </button>
+            <label for="accept" class="accept">
+              <input
+                type="checkbox"
+                class="checkbox"
+                name="accept"
+                id="accept"
+                required
+              />
+              <svg class="accept-icon accept-icon-ch" height="16" width="16">
+                <use href="./images/icons.svg#icon-checked"></use>
+              </svg>
+              <svg class="accept-icon accept-icon-unch" height="16" width="16">
+                <use href="./images/icons.svg#icon-unchecked"></use>
+              </svg>
+              I agree to the &nbsp;
+              <a href="#">privacy policу</a>
+            </label>
+          </form>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
