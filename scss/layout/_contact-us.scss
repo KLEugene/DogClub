@@ -1,23 +1,30 @@
-.contact-us{
-   position: relative;
-    &::after{
-        position: absolute;
-        top:0;
-        left:0;
-        width: 100%;
-        height: 752px;
-        background-image: url("../images/contact-left-dog.png"), url("../images/contact-right-dog.png");
-        z-index: -2;
-        background-position: 0 52px, 1158px 0;
-        background-size: 488px 520px, 322px 752px;
-        background-repeat: no-repeat;
-        content: "";
+.contact-us {
+  position: relative;
+  @media screen and (min-width: 768px) {
+    &::after {
+      position: absolute;
+      top: -150px;
+      left: -108px;
+      width: 125%;
+      height: 752px;
+      background-image: url(../images/contact-left-dog.png),
+        url(../images/contact-right-dog.png);
+      z-index: -2;
+      background-position: 30px 192px, calc(100vw - 322px) 0;
+      background-size: 353px 520px, 322px 752px;
+      background-repeat: no-repeat;
+      content: "";
     }
-    &__content{
-        width: 600px;
-        margin: 0 auto;
+  }
+
+  &__content {
+    width: 100%;
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      width: 600px;
     }
-    &__title{
-        margin-bottom: 16px;
-    }
+  }
+  &__title {
+    margin-bottom: 16px;
+  }
 }

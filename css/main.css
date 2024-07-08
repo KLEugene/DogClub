@@ -219,7 +219,6 @@ ul {
   /* background-color: var(--beauty-landing-2-c1); */
   display: flex;
   flex-direction: column;
-  width: 600px;
   align-items: center;
 }
 @media screen and (min-width: 768px) {
@@ -835,22 +834,29 @@ a {
 .contact-us {
   position: relative;
 }
-.contact-us::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 752px;
-  background-image: url("../images/contact-left-dog.png"), url("../images/contact-right-dog.png");
-  z-index: -2;
-  background-position: 0 52px, 1158px 0;
-  background-size: 488px 520px, 322px 752px;
-  background-repeat: no-repeat;
-  content: "";
+@media screen and (min-width: 768px) {
+  .contact-us::after {
+    position: absolute;
+    top: -150px;
+    left: -108px;
+    width: 125%;
+    height: 752px;
+    background-image: url(../images/contact-left-dog.png), url(../images/contact-right-dog.png);
+    z-index: -2;
+    background-position: 30px 192px, calc(100vw - 322px) 0;
+    background-size: 353px 520px, 322px 752px;
+    background-repeat: no-repeat;
+    content: "";
+  }
 }
 .contact-us__content {
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .contact-us__content {
+    width: 600px;
+  }
 }
 .contact-us__title {
   margin-bottom: 16px;
@@ -884,22 +890,12 @@ a {
 }
 
 .happy-customers {
-  /*  &__cards {
-     display: flex;
-   }
-   &__card {
-     position: relative;
-     display: block;
-     width: 320px;
-     height: 416px;
-     overflow: hidden;
-     border-radius: 16px;
-     @media screen and (min-width: 768px) {
-       width: 344px;
-       height: 456px;
-       border-radius: 24px;
-     }
-   } */
+  margin-bottom: 72px;
+}
+@media screen and (min-width: 768px) {
+  .happy-customers {
+    margin-bottom: 168px;
+  }
 }
 .happy-customers__image {
   width: 100%;
@@ -942,9 +938,9 @@ a {
 }
 
 .accent-bone {
-  fill: #FFAA00;
+  fill: #ffaa00;
 }
 
 .empty-bone {
-  fill: #F1F3FF;
+  fill: #f1f3ff;
 }/*# sourceMappingURL=main.css.map */
