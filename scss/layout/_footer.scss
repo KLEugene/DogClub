@@ -1,0 +1,38 @@
+.footer {
+  padding: 32px 0 32px 100px;
+  &__container {
+    display: flex;
+    gap: 136px;
+  }
+  &__logo {
+    width: 192px;
+    & > .logo {
+      margin-bottom: 24px;
+    }
+  }
+  &__soc-icon {
+    margin-right: 8px;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+  }
+  &__link {
+    color: var(--dog-landing-3-c4);
+    &:hover,
+    &:focus {
+      color: var(--dog-landing-3-s1);
+    }
+  }
+  &__form {
+    width: 320px;
+  }
+}
+.footer-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}

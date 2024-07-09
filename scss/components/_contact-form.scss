@@ -35,6 +35,10 @@
       color: var(--dog-landing-3-s1);
     }
   }
+  &__input.footer{
+    margin-bottom: 16px;
+    height: 40px;
+  }
 
   &__button {
     border-radius: 8px;

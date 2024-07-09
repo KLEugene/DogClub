@@ -260,6 +260,10 @@ ul {
   letter-spacing: 0.05em;
   color: var(--dog-landing-3-s1);
 }
+.contact-form__input.footer {
+  margin-bottom: 16px;
+  height: 40px;
+}
 .contact-form__button {
   border-radius: 8px;
   padding: 16px 32px;
@@ -829,6 +833,43 @@ a {
 .hero__image {
   width: 506px;
   height: 516px;
+}
+
+.footer {
+  padding: 32px 0 32px 100px;
+}
+.footer__container {
+  display: flex;
+  gap: 136px;
+}
+.footer__logo {
+  width: 192px;
+}
+.footer__logo > .logo {
+  margin-bottom: 24px;
+}
+.footer__soc-icon {
+  margin-right: 8px;
+}
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__link {
+  color: var(--dog-landing-3-c4);
+}
+.footer__link:hover, .footer__link:focus {
+  color: var(--dog-landing-3-s1);
+}
+.footer__form {
+  width: 320px;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-us {
