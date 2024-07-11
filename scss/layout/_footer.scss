@@ -17,7 +17,6 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    
   }
   &__link {
     color: var(--dog-landing-3-c4);
@@ -30,9 +29,9 @@
     width: 320px;
   }
 }
-.footer-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }

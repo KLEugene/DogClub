@@ -35,19 +35,26 @@
       color: var(--dog-landing-3-s1);
     }
   }
-  &__input.footer{
+  &__input.footer-input {
     margin-bottom: 16px;
     height: 40px;
+    padding: 8px 56px;
+  }
+  &__input.without-icon {
+    padding: 8px 24px;
   }
 
   &__button {
     border-radius: 8px;
     padding: 16px 32px;
     width: 151px;
-    height: 53px;
     background: var(--dog-landing-3-s1);
     color: var(--dog-landing-3-c3);
     margin-bottom: 16px;
+  }
+  &__button.footer-button {
+    padding: 8px 24px;
+    border-radius: 4px;
   }
 
   &__agree {
@@ -64,6 +71,9 @@
     position: absolute;
     top: 8px;
     left: 40px;
+  }
+  &__icon.footer-icon {
+    left: 24px;
   }
 }
 .accept {
