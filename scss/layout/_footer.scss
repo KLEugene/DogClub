@@ -1,5 +1,9 @@
 .footer {
   padding: 32px 0 32px 100px;
+  background: url("../images/footer-dog.png");
+  background-repeat: no-repeat;
+  background-size: 292px 306px;
+  background-position: calc(100% - 120px) 0; 
   &__container {
     display: flex;
     gap: 136px;
