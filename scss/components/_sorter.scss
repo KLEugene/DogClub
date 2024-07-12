@@ -1,0 +1,61 @@
+.sorting {
+  display: flex;
+  justify-content: space-between;
+}
+.sorting-title {
+  color: var(--dog-landing-3-s1);
+}
+.sorting-label {
+  display: inline-block;
+  color: var(--dog-landing-3-s1);
+  margin-right: 16px;
+}
+.bd-example::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.btn-group {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.btn-check {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+
+.btn-group > .btn {
+  position: relative;
+  flex: 1 1 auto;
+  border: 1px solid var(--dog-landing-3-c6);
+  border-radius: 2px 0 0 2px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.btn-group > .btn-check:checked + .btn,
+.btn-group > .btn-check:focus + .btn,
+.btn-group > .btn.active,
+.btn-group > .btn:active,
+.btn-group > .btn:focus,
+.btn-group > .btn:hover {
+  z-index: 1;
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  color: white;
+  background-color: var(--dog-landing-3-s1);
+  border-color: inherit;
+}
+
+.btn-group > .btn-group:not(:first-child),
+.btn-group > :not(.btn-check:first-child) + .btn {
+  margin-left: calc(1px * -1);
+}
