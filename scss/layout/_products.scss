@@ -1,0 +1,48 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  &__lot {
+    width: 288px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  &__preview {
+    font-size: 16px;
+    text-align: center;
+    color: var(--dog-landing-3-c4);
+  }
+}
+
+.stars-and-code {
+  display: flex;
+  justify-content: start;
+  
+  &__code {
+    font-size: 14px;
+    text-align: center;
+    color: var(--dog-landing-3-c6);
+  }
+
+  &__star{
+    gap:8px;
+  }
+}
+
+.new-price {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: var(--dog-landing-3-c4);
+}
+
+.old-price {
+  font-size: 14px;
+  text-decoration: line-through;
+  text-align: center;
+  color: var(--dog-landing-3-c6);
+}
