@@ -52,7 +52,6 @@
 :not(.btn-check) + .btn:active {
   color: white;
   background-color: var(--dog-landing-3-s1);
-  border-color: inherit;
 }
 
 .btn-group > .btn-group:not(:first-child),
