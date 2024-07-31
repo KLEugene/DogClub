@@ -32,10 +32,14 @@
   position: relative;
   flex: 1 1 auto;
   border: 1px solid var(--dog-landing-3-c6);
-  border-radius: 2px 0 0 2px;
+  
   padding: 8px;
   font-size: 16px;
 }
+
+/* .btn-group > :first-child{
+border-radius: 2px 0 0 2px;
+} */
 
 .btn-group > .btn-check:checked + .btn,
 .btn-group > .btn-check:focus + .btn,
