@@ -44,69 +44,78 @@
     <main>
       <div class="container">
         <section class="sorting section">
-          <h1 class="title sorting-title">Nutrition</h1>
-          <div class="sorter">
-            <label class="sorting-label">Sorting: </label>
-            <div
-              class="btn-group"
-              role="group"
-              aria-label="Basic radio toggle button group"
-            >
-              <input
-                type="radio"
-                class="btn-check"
-                name="btnradio"
-                id="btnradio1"
-                autocomplete="off"
-                checked
-              />
-              <label class="btn btn-outline-primary" for="btnradio1"
-                >Popularity</label
+          <div class="sorting__desktop">
+            <h1 class="title sorting-title">Nutrition</h1>
+            <div class="sorter">
+              <label class="sorting-label">Sorting: </label>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic radio toggle button group"
               >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio1"
+                  autocomplete="off"
+                  checked
+                />
+                <label class="btn btn-outline-primary" for="btnradio1"
+                  >Popularity</label
+                >
 
-              <input
-                type="radio"
-                class="btn-check"
-                name="btnradio"
-                id="btnradio2"
-                autocomplete="off"
-              />
-              <label class="btn btn-outline-primary" for="btnradio2"
-                >Cheaper first</label
-              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="btnradio2"
+                  >Cheaper first</label
+                >
 
-              <input
-                type="radio"
-                class="btn-check"
-                name="btnradio"
-                id="btnradio3"
-                autocomplete="off"
-              />
-              <label class="btn btn-outline-primary" for="btnradio3"
-                >More expensive first</label
-              >
-              <input
-                type="radio"
-                class="btn-check"
-                name="btnradio"
-                id="btnradio4"
-                autocomplete="off"
-              />
-              <label class="btn btn-outline-primary" for="btnradio4"
-                >By name</label
-              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio3"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="btnradio3"
+                  >More expensive first</label
+                >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio4"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="btnradio4"
+                  >By name</label
+                >
 
-              <input
-                type="radio"
-                class="btn-check"
-                name="btnradio"
-                id="btnradio5"
-                autocomplete="off"
-              />
-              <label class="btn btn-outline-primary" for="btnradio5"
-                >New ones first</label
-              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio5"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="btnradio5"
+                  >New ones first</label
+                >
+              </div>
             </div>
+          </div>
+          <div class="sorting__mobile">
+            <button>
+              <img class="sort-arrow" src="./images/arrow-up.svg" alt="" />
+              <img class="sort-arrow down" src="./images/arrow-up.svg" alt="" />
+            </button>
+            <span id="sort">Popularity</span>
           </div>
         </section>
         <section class="products section">

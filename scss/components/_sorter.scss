@@ -1,7 +1,32 @@
 .sorting {
-  display: flex;
-  justify-content: space-between;
+  &__desktop {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__mobile {
+    display: flex;
+    gap: 4px;
+    & > button {
+      display: flex;
+      justify-content: center;
+      background-color: inherit;
+      border: none;
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+      .down {
+        transform: rotate(180deg);
+      }
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
 }
+
 .sorting-title {
   color: var(--dog-landing-3-s1);
 }
@@ -32,7 +57,7 @@
   position: relative;
   flex: 1 1 auto;
   border: 1px solid var(--dog-landing-3-c6);
-  
+
   padding: 8px;
   font-size: 16px;
 }
