@@ -1,6 +1,7 @@
 .hero {
   display: flex;
   position: relative;
+  padding: 0 0 65px 0;
   &::before {
     position: absolute;
     content: "";

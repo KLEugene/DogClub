@@ -812,6 +812,7 @@ border-radius: 2px 0 0 2px;
 .hero {
   display: flex;
   position: relative;
+  padding: 0 0 65px 0;
 }
 .hero::before {
   position: absolute;
@@ -912,17 +913,31 @@ border-radius: 2px 0 0 2px;
 }
 
 .footer {
-  padding: 14px 20px 40px 20px;
-  background: url("../images/footer-dog.png"), var(--dog-landing-3-c3);
+  position: relative;
+  padding: 122px 20px 40px 20px;
+}
+.footer::before {
+  position: absolute;
+  top: 0;
+  left: calc(50vw - 64px);
+  content: "";
+  width: 128px;
+  height: 146px;
+  background: url("../images/footer-dog.png");
   background-repeat: no-repeat;
   background-size: 128px 146px;
-  background-position: calc(50% + 64px) 0;
+}
+@media screen and (min-width: 768px) {
+  .footer::before {
+    width: 292px;
+    height: 306px;
+    background-size: 292px 306px;
+    left: calc(100vw - 392px);
+  }
 }
 @media screen and (min-width: 768px) {
   .footer {
     padding: 32px 0 32px 100px;
-    background-size: 292px 306px;
-    background-position: calc(100% - 120px) 0;
   }
 }
 .footer__container {
@@ -930,9 +945,12 @@ border-radius: 2px 0 0 2px;
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  padding-top: 14px;
+  background-color: var(--dog-landing-3-c3);
 }
 @media screen and (min-width: 768px) {
   .footer__container {
+    padding-top: 14px;
     gap: 136px;
     flex-direction: row;
     align-items: start;
@@ -942,8 +960,12 @@ border-radius: 2px 0 0 2px;
   width: 192px;
 }
 .footer__logo > .logo {
-  margin-bottom: 24px;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo > .logo {
+    margin-bottom: 24px;
+  }
 }
 .footer__soc {
   display: none;
