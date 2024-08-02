@@ -4,16 +4,24 @@
   justify-content: center;
 
   &__lot {
-    width: 288px;
-    height: 512px;
+    width: 152px;
+    height: 366px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    @media screen and (min-width:768px) {
+      width: 288px;
+    height: 512px;
+    }
 
     img {
-      height: 288px;
+      
+      height: 162px;
       object-fit: contain;
+      @media screen and (min-width:768px) {
+        height: 288px;
+      }
     }
 
     /* p {
@@ -22,30 +30,46 @@
   }
 
   &__preview {
-    padding: 0 16px;
-    font-size: 16px;
+    padding: 0;
+    font-size: 14px;
     text-align: center;
     color: var(--dog-landing-3-c4);
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     line-height: 18.75px;
+    @media screen and (min-width:768px) {
+      font-size: 16px;
+      margin-bottom: 24px;
+      padding: 0 16px;
+    }
   }
 }
 
 .stars-and-code {
   display: flex;
-  justify-content: start;
-  margin-bottom: 16px;
+  justify-content: center;
+  margin-bottom: 8px;
+  flex-direction: column;
+  @media screen and (min-width:768px) {
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 16px;
+  }
 
   &__code {
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     color: var(--dog-landing-3-c6);
     line-height: 16.41px;
-    margin-right: 16px;
+    margin: 0 auto;
+    @media screen and (min-width:768px) {
+      font-size: 14px;
+      margin-right: 16px;
+    }
   }
 
   div {
     display: flex;
+   justify-content: center;
   }
 
   &__star {
@@ -59,16 +83,22 @@
 
 .new-price {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   color: var(--dog-landing-3-c4);
   line-height: 21.09px;
+  @media screen and (min-width:768px) {
+     font-size: 18px;
+  }
 }
 
 .old-price {
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: line-through;
   text-align: center;
   color: var(--dog-landing-3-c6);
   line-height: 16.41px;
+  @media screen and (min-width:768px) {
+    font-size: 14px;
+  }
 }

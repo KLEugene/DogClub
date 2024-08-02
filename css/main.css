@@ -1043,8 +1043,8 @@ border-radius: 2px 0 0 2px;
   justify-content: center;
 }
 .products__lot {
-  width: 288px;
-  height: 512px;
+  width: 152px;
+  height: 366px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1053,34 +1053,67 @@ border-radius: 2px 0 0 2px;
     font-size: 16px;
   } */
 }
+@media screen and (min-width: 768px) {
+  .products__lot {
+    width: 288px;
+    height: 512px;
+  }
+}
 .products__lot img {
-  height: 288px;
+  height: 162px;
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media screen and (min-width: 768px) {
+  .products__lot img {
+    height: 288px;
+  }
+}
 .products__preview {
-  padding: 0 16px;
-  font-size: 16px;
+  padding: 0;
+  font-size: 14px;
   text-align: center;
   color: var(--dog-landing-3-c4);
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   line-height: 18.75px;
+}
+@media screen and (min-width: 768px) {
+  .products__preview {
+    font-size: 16px;
+    margin-bottom: 24px;
+    padding: 0 16px;
+  }
 }
 
 .stars-and-code {
   display: flex;
-  justify-content: start;
-  margin-bottom: 16px;
+  justify-content: center;
+  margin-bottom: 8px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .stars-and-code {
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 16px;
+  }
 }
 .stars-and-code__code {
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   color: var(--dog-landing-3-c6);
   line-height: 16.41px;
-  margin-right: 16px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .stars-and-code__code {
+    font-size: 14px;
+    margin-right: 16px;
+  }
 }
 .stars-and-code div {
   display: flex;
+  justify-content: center;
 }
 .stars-and-code__star {
   gap: 8px;
@@ -1092,18 +1125,28 @@ border-radius: 2px 0 0 2px;
 
 .new-price {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   color: var(--dog-landing-3-c4);
   line-height: 21.09px;
 }
+@media screen and (min-width: 768px) {
+  .new-price {
+    font-size: 18px;
+  }
+}
 
 .old-price {
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: line-through;
   text-align: center;
   color: var(--dog-landing-3-c6);
   line-height: 16.41px;
+}
+@media screen and (min-width: 768px) {
+  .old-price {
+    font-size: 14px;
+  }
 }
 
 .contact-us {
