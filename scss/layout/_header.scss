@@ -7,7 +7,7 @@
 
   @media screen and (min-width: 768px) {
     padding: 32px 108px;
-    margin-bottom: 72px;
+    margin-bottom: 212px;
   }
 
   &__menu {
@@ -21,11 +21,13 @@
     }
   }
 
-  &__link{
+  &__link {
     color: var(--dog-landing-3-c4);
   }
   &__link:hover,
-  &__link:focus{color: var(--dog-landing-3-s1);}
+  &__link:focus {
+    color: var(--dog-landing-3-s1);
+  }
 
   &__button {
     display: flex;
