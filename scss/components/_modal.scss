@@ -60,3 +60,30 @@
     }
   }
 }
+
+.sort-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: 0.05em;
+  color: var(--dog-landing-3-s1);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.modal-sort-list {
+  display: flex;
+  flex-direction: column;
+  /* gap:16px; */
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dog-landing-3-s4);
+  }
+  &__item:not(:last-child){
+    margin-bottom: 16px;
+  }
+}
