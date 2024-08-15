@@ -81,9 +81,10 @@
     justify-content: space-between;
     font-weight: 400;
     font-size: 16px;
+    line-height: normal;
     color: var(--dog-landing-3-s4);
   }
-  &__item:not(:last-child){
+  &__item:not(:last-child) {
     margin-bottom: 16px;
   }
 }
