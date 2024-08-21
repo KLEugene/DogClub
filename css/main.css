@@ -662,6 +662,41 @@ a {
   }
 }
 
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  padding: 16px 20px;
+  background: inherit;
+  transform: translateX(-100vw);
+  transition: transform 500ms;
+}
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+.mobile-menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.mobile-menu__link {
+  font-size: 16px;
+  color: var(--dog-landing-3-c4);
+}
+.mobile-menu__link:focus {
+  font-weight: 700;
+  color: var(--dog-landing-3-s1);
+}
+
 .usually-text {
   font-family: var(--font-family);
   font-weight: 400;
