@@ -1,13 +1,17 @@
 .mobile-menu {
   width: 100vw;
   height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  z-index: 3;
+  overflow: auto;
+  background-color: white;
   padding: 16px 20px;
-  background: inherit;
-  transform: translateX(-100vw);
-  transition:transform 500ms ;
- &.is-open{
-    transform: translateX(0);
- }
+  transition: left 500ms;
+  &.is-open {
+    left: 0;
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -15,11 +19,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
   }
   &__list {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-bottom: 24px;
   }
   &__link {
     font-size: 16px;
@@ -29,5 +35,22 @@
       font-weight: 700;
       color: var(--dog-landing-3-s1);
     }
+  }
+  &__soc-mobile {
+    display: flex;
+    gap: 8px;
+  }
+  &__close {
+    width: 32px;
+    height: 32px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 16px;
+    right: 20px;
   }
 }
