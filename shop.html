@@ -35,6 +35,46 @@
           </li>
         </ul>
       </nav>
+      <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu__header">
+          <a href="/" class="logo">
+            <svg class="logo__icon">
+              <use href="./images/icons.svg#icon-paw"></use>
+            </svg>
+            <span class="logo__text-big">Dog</span
+            ><span class="logo__text-little">Club</span>
+          </a>
+          <button
+            id="mobile-menu-close"
+            type="button"
+            class="icon-button button-close mobile-menu__close"
+          >
+            <svg width="16" height="16">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="mobile-menu__list">
+          <li><a href="./index.html#preview" class="mobile-menu__link">Less talk</a></li>
+          <li>
+            <a href="./index.html#services" class="mobile-menu__link">Services category</a>
+          </li>
+          <li>
+            <a href="./index.html#happy-customers" class="mobile-menu__link"
+              >Happy customer</a
+            >
+          </li>
+          <li><a href="./index.html#contact-us" class="mobile-menu__link">Contact</a></li>
+        </ul>
+        <div class="mobile-menu__soc-mobile">
+          <svg class="mobile-menu__soc-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+          <svg class="mobile-menu__soc-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </div>
+      </div>
       <div class="header__button">
         <button class="basket">
           <svg class="basket-icon">
@@ -44,7 +84,7 @@
         <button id="modal-open" class="button contact-btn" type="button">
           Contact us
         </button>
-        <button class="burger-btn">
+        <button id="open-mobile-menu" class="burger-btn">
           <svg width="24" height="24">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -628,5 +668,6 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/sort-modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1200,6 +1200,8 @@ border-radius: 2px 0 0 2px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  transform: scale(1);
+  transition: transform 250ms;
   /* p {
     font-size: 16px;
   } */
@@ -1209,6 +1211,9 @@ border-radius: 2px 0 0 2px;
     width: 288px;
     height: 512px;
   }
+}
+.products__lot:hover, .products__lot:focus {
+  transform: scale(1.1);
 }
 .products__lot img {
   height: 162px;
